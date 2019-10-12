@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'sign_up/index'
   get 'login/index'
 
   root 'login#index'

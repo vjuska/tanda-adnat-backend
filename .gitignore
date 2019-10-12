@@ -1,2 +1,5 @@
 *DS_Store
-/adnat-backend/bin/*
+adnat-backend/bin/*
+adnat-backend/node_modules/*
+adnat-backend/tmp/*
+adnat-backend/test/*
