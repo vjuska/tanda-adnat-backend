@@ -12,6 +12,9 @@ class UsersController < ApplicationController
         @user = User.new
     end
 
+    def edit
+        @user = User.find([:id])
+    end
 
     def create
         @user = User.new(article_params)
@@ -20,6 +23,15 @@ class UsersController < ApplicationController
             redirect_to @user
         else
             render 'new'
+        end
+    end
+
+    def update
+        @user = User.find([:id])
+        if @user.update(article_params)
+            redirect_to @user
+        else
+            render 'edit'
         end
     end
 
