@@ -5,44 +5,5 @@
     <h2>Sign Up</h2>
 </div>
 <div>
-  <%= form_with scope: :user, url: users_path,  local: true do |form| %>
-
-  <% if @user.errors.any? %>
-    <div id="adnatSignInPageErrros">
-    <h2>
-        <%= pluralize(@user.errors.count, "error") %> prohibited
-        this user from being saved:
-      </h2>
-      <ul>
-        <% @user.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
-        <% end %>
-      </ul>
-    </div>
-  <%end%>
-    <p>
-        <%= form.label :first_name %><br>
-        <%= form.text_field :first_name %>
-    </p>
-    <p>
-        <%= form.label :last_name %><br>
-        <%= form.text_field :last_name %>
-    </p>
-    <p>
-        <%= form.label :email_address %><br>
-        <%= form.text_field :email_address %>
-    </p>
-    <p>
-        <%= form.label :Password %>
-        <br><p>(6 Characters minimum)</p>
-        <%= form.text_field :Password %>
-    </p>
-    <p>
-        <%= form.label :PasswordConfirmation %><br>
-        <%= form.text_field :PasswordConfirmation %>
-    </p>
-    <p>
-    <%= form.submit %>
-  </p>
-    <% end %>
+   <%= render 'form' %>
    <%= link_to 'Log In', controller: 'login' %>
