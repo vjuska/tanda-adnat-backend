@@ -29,11 +29,13 @@
     <%= form.label :password %>
     <br>
     <p>(6 Characters minimum)</p>
-    <%= form.text_field :password %>
+    
+    
+    <%= password_field(:user, :password, onchange: "if(document.getElementById('user_password').value.length < 6){alert('Your password needs to be at least 6 characters!');};") %>
 </p>
 <p>
-    <%= form.label :passwordConfirmation %><br>
-    <%= form.text_field :passwordConfirmation %>
+    <%= form.label :password_confirmation, 'Password Confirmation' %><br>
+    <%= password_field(:user, :password_confirmation, size: 20,onchange: "if(document.getElementById('user_password').value.length < 6){alert('Your password needs to be at least 6 characters!');};") %>
 </p>
 <p>
     <%= form.submit %>
