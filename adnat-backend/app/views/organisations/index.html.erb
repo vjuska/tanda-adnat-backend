@@ -1,0 +1,40 @@
+<div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+</div>
+
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with scope: :organisation, url: organisations_path, local: true do |form| %>
+    <p>
+    <%= form.label :org_name %><br>
+    <%= form.text_field :org_name %>
+    </p>
+ 
+    <p>
+    <%= form.label :hourly_rate %><br>
+    <%= form.text_field :hourly_rate %>
+    </p>
+
+    <p>
+    <%= form.submit %>
+    </p>
+    <% end %>
+</div>

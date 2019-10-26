@@ -1,18 +1,15 @@
 <h1>Listing users</h1>
- 
 <table>
   <tr>
     <th>First Name</th>
     <th>Last Name</th>
     <th></th>
   </tr>
- 
   <% @users.each do |user| %>
     <tr>
       <td><%= user.first_name %></td>
       <td><%= user.last_name %></td>
       <td><%= user.email_address %></td>
-
       <td><%= link_to 'Show', user_path(user) %></td>
       <td><%= link_to 'Edit', edit_user_path(user) %></td>
       <td><%= link_to 'Delete', user_path(user),

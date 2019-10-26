@@ -6307,3 +6307,2445 @@ Processing by UsersController#show as HTML
 Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.2ms | Allocations: 6797)
 
 
+Started GET "/login/index" for ::1 at 2019-10-26 12:22:33 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 246)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6639)
+
+
+Started GET "/organisations/new" for ::1 at 2019-10-26 12:26:14 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant OrganisationsController):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/new" for ::1 at 2019-10-26 12:29:42 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2178)
+
+
+  
+NameError (uninitialized constant OrganisationsController::Organisation
+Did you mean?  OrganisationsHelper):
+  
+app/controllers/organisations_controller.rb:11:in `new'
+Started GET "/" for ::1 at 2019-10-26 12:31:23 +1000
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 682)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.0ms | Allocations: 12573)
+
+
+Started GET "/users" for ::1 at 2019-10-26 12:31:28 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 6340)
+Completed 200 OK in 25ms (Views: 19.8ms | ActiveRecord: 1.2ms | Allocations: 14407)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:31:53 +1000
+Processing by OrganisationsController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2205)
+
+
+  
+NameError (uninitialized constant OrganisationsController::Organisation
+Did you mean?  OrganisationsHelper):
+  
+app/controllers/organisations_controller.rb:3:in `index'
+Started GET "/organisation/" for ::1 at 2019-10-26 12:33:48 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/organisation"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-10-26 12:33:52 +1000
+Processing by OrganisationsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2205)
+
+
+  
+NameError (uninitialized constant OrganisationsController::Organisation
+Did you mean?  OrganisationsHelper):
+  
+app/controllers/organisations_controller.rb:3:in `index'
+Started GET "/organisations" for ::1 at 2019-10-26 12:34:06 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7651)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:34:41 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 89)
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 7675)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:36:25 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 91)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 7679)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:36:48 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 91)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 7680)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:37:15 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 95)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 7688)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:37:37 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 97)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 7689)
+
+
+Started GET "/users" for ::1 at 2019-10-26 12:37:42 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 6340)
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.8ms | Allocations: 14345)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 12:38:53 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1397)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2552)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrganisations (20191026024450)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateOrganisations (20191026024450)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "organisations" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "org_name" varchar, "hourly_rate" decimal, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191026024450"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/organisations" for ::1 at 2019-10-26 12:55:44 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1205)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1774)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 12:55:58 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1897)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 4197)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 12:56:03 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1248)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1667)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 12:56:23 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1246)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2236)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 12:56:27 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1246)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1671)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 12:57:23 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1205)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2112)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @oranisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 12:57:39 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1388)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2558)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @organisations.each do |org| %>
+    17:     <li>org</li>
+    18:   <% end %>
+    19: <ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations/new" for ::1 at 2019-10-26 12:58:55 +1000
+Processing by OrganisationsController#new as HTML
+Completed 406 Not Acceptable in 14ms (ActiveRecord: 0.9ms | Allocations: 5513)
+
+
+  
+ActionController::MissingExactTemplate (OrganisationsController#new is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/new" for ::1 at 2019-10-26 12:59:53 +1000
+Processing by OrganisationsController#new as HTML
+Completed 406 Not Acceptable in 4ms (ActiveRecord: 0.0ms | Allocations: 1968)
+
+
+  
+ActionController::MissingExactTemplate (OrganisationsController#new is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-10-26 12:59:55 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 727)
+Completed 200 OK in 1000ms (Views: 998.0ms | ActiveRecord: 0.2ms | Allocations: 1339526)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:00:24 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 582)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.2ms | Allocations: 7251)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:00:55 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 722)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.2ms | Allocations: 8325)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:01:22 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 743)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.1ms | Allocations: 8356)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:01:35 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 571)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.1ms | Allocations: 7248)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:03:29 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 8.2ms | Allocations: 4008)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 5175)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6c6b8b4f0>
+Did you mean?  to_xml):
+    20: <div>
+    21: 
+    22: <div>
+    23: <%= form_with model: @orgs,  local: true do |form| %>
+    24: <p>
+    25:     <%= form.label :org_name, "Organisation Name" %><br>
+    26:     <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:23
+Started GET "/organisations" for ::1 at 2019-10-26 13:03:55 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 5650)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.1ms | Allocations: 13170)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:04:29 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2733)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.2ms | Allocations: 10242)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:04:45 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2729)
+Completed 200 OK in 22ms (Views: 19.9ms | ActiveRecord: 0.3ms | Allocations: 10234)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:05:06 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 6.2ms | Allocations: 3877)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.2ms | Allocations: 11385)
+
+
+Started POST "/organisations" for ::1 at 2019-10-26 13:05:17 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"USMK4lZzKJ1b6mJ1kMnoQvlBsBFVOTVGFDQckyIgKT7vPpKq/GfgbUh8a0H1UmkUMssa8nt7LQ6qcYbxD5CZSA==", "org_name"=>"Test Organisation", "hourly_rate"=>"4", "commit"=>"Save "}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 637)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/organisations_controller.rb:46:in `orgs_params'
+app/controllers/organisations_controller.rb:19:in `create'
+Started POST "/organisations" for ::1 at 2019-10-26 13:05:43 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"USMK4lZzKJ1b6mJ1kMnoQvlBsBFVOTVGFDQckyIgKT7vPpKq/GfgbUh8a0H1UmkUMssa8nt7LQ6qcYbxD5CZSA==", "org_name"=>"Test Organisation", "hourly_rate"=>"4", "commit"=>"Save "}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 884)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: orgs):
+  
+app/controllers/organisations_controller.rb:46:in `orgs_params'
+app/controllers/organisations_controller.rb:19:in `create'
+Started POST "/organisations" for ::1 at 2019-10-26 13:07:02 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"USMK4lZzKJ1b6mJ1kMnoQvlBsBFVOTVGFDQckyIgKT7vPpKq/GfgbUh8a0H1UmkUMssa8nt7LQ6qcYbxD5CZSA==", "org_name"=>"Test Organisation", "hourly_rate"=>"4", "commit"=>"Save "}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 631)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: orgs):
+  
+app/controllers/organisations_controller.rb:46:in `orgs_params'
+app/controllers/organisations_controller.rb:19:in `create'
+Started GET "/users" for ::1 at 2019-10-26 13:09:47 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:10
+  Rendered users/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 6567)
+Completed 200 OK in 19ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 14841)
+
+
+Started GET "/users/new" for ::1 at 2019-10-26 13:09:51 +1000
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.2ms | Allocations: 2057)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.9ms | Allocations: 2905)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 9724)
+
+
+Started POST "/users" for ::1 at 2019-10-26 13:10:00 +1000
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"arLiOEHLiApRj3J7wMhi3V55FCWlmzioB1S1Bm2+Ju3Ur3pw699A+kIZe0+lU+OLlfO+xovZIOC5ES9kQA6Wmw==", "user"=>{"first_name"=>"asdfa", "last_name"=>"asdf", "email_address"=>"asdf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create User"}
+[31mUnpermitted parameter: :password_confirmation[0m
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.2ms | Allocations: 1386)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1524)
+Completed 200 OK in 249ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 9029)
+
+
+Started GET "/organisations/new" for ::1 at 2019-10-26 13:12:06 +1000
+Processing by OrganisationsController#new as HTML
+Completed 406 Not Acceptable in 15ms (ActiveRecord: 0.8ms | Allocations: 5022)
+
+
+  
+ActionController::MissingExactTemplate (OrganisationsController#new is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-10-26 13:12:14 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 4034)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.4ms | Allocations: 5206)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6c8139248>
+Did you mean?  to_xml):
+    21: 
+    22: <div>
+    23:     <h1>Create Organisation</h1>
+    24:     <%= form_with model: @orgs,  local: true do |form| %>
+    25:     <p>
+    26:         <%= form.label :org_name, "Organisation Name" %><br>
+    27:         <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:24
+Started GET "/organisations" for ::1 at 2019-10-26 13:12:50 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 2840)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.2ms | Allocations: 10352)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:13:16 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1206)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2120)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @orgs.each do |org| %>
+    17:     <li><%=org.org_name =%></li>
+    18:   <% end %>
+    19: </ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 13:13:53 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1531)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2702)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @organisations.each do |org| %>
+    17:     <li><%=org.org_name =%></li>
+    18:   <% end %>
+    19: </ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 13:14:28 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1205)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2119)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @organisations.each do |org| %>
+    17:     <li><%=org.org_name =%></li>
+    18:   <% end %>
+    19: </ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 13:14:34 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1244)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1668)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14: <h1>Organisations</h1>
+    15: <ul>
+    16: <% @organisations.each do |org| %>
+    17:     <li><%=org.org_name =%></li>
+    18:   <% end %>
+    19: </ul>
+  
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-10-26 13:14:49 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 17.1ms | Allocations: 7312)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.9ms | Allocations: 8483)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6c8112a08>
+Did you mean?  to_xml):
+    21: 
+    22: <div>
+    23:     <h1>Create Organisation</h1>
+    24:     <%= form_with model: @organisation,  local: true do |form| %>
+    25:     <p>
+    26:         <%= form.label :org_name, "Organisation Name" %><br>
+    27:         <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:24
+Started GET "/organisations" for ::1 at 2019-10-26 13:15:04 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 4006)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms | Allocations: 5177)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6bef143e0>
+Did you mean?  to_xml):
+    21: 
+    22: <div>
+    23:     <h1>Create Organisation</h1>
+    24:     <%= form_with model: @organisation,  local: true do |form| %>
+    25:     <p>
+    26:         <%= form.label :org_name, "Organisation Name" %><br>
+    27:         <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:24
+Started GET "/organisations" for ::1 at 2019-10-26 13:15:14 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 726)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.1ms | Allocations: 8333)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:16:00 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 31.0ms | Allocations: 7275)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.5ms | Allocations: 8774)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6c78f0f50>
+Did you mean?  to_xml):
+    21: 
+    22: <div>
+    23:     <h1>Create Organisation</h1>
+    24:     <%= form_with model: @organisation,  local: true do |form| %>
+    25:     <p>
+    26:         <%= form.label :org_name, "Organisation Name" %><br>
+    27:         <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:24
+Started GET "/organisations" for ::1 at 2019-10-26 13:16:29 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 7027)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.7ms | Allocations: 7936)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6c6ec0440>
+Did you mean?  to_xml):
+    21: 
+    22: <div>
+    23:     <h1>Create Organisation</h1>
+    24:     <%= form_with model: @organisation,  local: true do |form| %>
+    25:     <p>
+    26:         <%= form.label :org_name, "Organisation Name" %><br>
+    27:         <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:24
+Started GET "/organisations" for ::1 at 2019-10-26 13:16:44 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1172)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2339)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+<div class="adnatHeader">
+  <h1>ADNAT</h1>
+</div>
+<div>
+
+<div>
+<p>Logged in as:   <a href="#">LogOut</a></p>
+<p>You are not the member of any organisations.<br>
+Join an existing one or create a new one</p>
+<div>
+
+<div>
+<h1>Organisations</h1>
+<ul>
+<% @organisation.each do |org| %>
+    <li><%=org.org_name =%></li>
+  <% end %>
+</ul>
+<div>
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+    <p>
+        <%= form.label :org_name, "Organisation Name" %><br>
+        <%= form.text_field :org_name %>
+    </p>
+    <p>
+        <%= form.label :hourly_rate, "Hourly rate" %><br>
+        <%= form.text_field :hourly_rate %>
+    </p>
+    <%= form.submit %>
+    <% end %>
+</div>
+):
+1:    <div>
+2:    <div class="adnatHeader">
+3:      <h1>ADNAT</h1>
+4:    </div>
+5:    <div>
+6:    
+7:    <div>
+8:    <p>Logged in as:   <a href="#">LogOut</a></p>
+9:    <p>You are not the member of any organisations.<br>
+10:    Join an existing one or create a new one</p>
+11:    <div>
+12:    
+13:    <div>
+14:    <h1>Organisations</h1>
+15:    <ul>
+16:    <% @organisation.each do |org| %>
+17:        <li><%=org.org_name =%></li>
+18:      <% end %>
+19:    </ul>
+20:    <div>
+21:    
+22:    <div>
+23:        <h1>Create Organisation</h1>
+24:        <%= form_with model: @organisation%>
+25:        <p>
+26:            <%= form.label :org_name, "Organisation Name" %><br>
+27:            <%= form.text_field :org_name %>
+28:        </p>
+29:        <p>
+30:            <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:            <%= form.text_field :hourly_rate %>
+32:        </p>
+33:        <%= form.submit %>
+34:        <% end %>
+35:    </div>
+  
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:17:35 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 7.6ms | Allocations: 4011)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms | Allocations: 5177)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa6bf715b48>
+Did you mean?  to_xml):
+    21: 
+    22: <div>
+    23:     <h1>Create Organisation</h1>
+    24:     <%= form_with model: @organisation,  local: true do |form| %>
+    25:         <p>
+    26:             <%= form.label :org_name, "Organisation Name" %><br>
+    27:             <%= form.text_field :org_name %>
+  
+app/views/organisations/index.html.erb:24
+Started GET "/organisations" for ::1 at 2019-10-26 13:21:24 +1000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 3840)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 6430)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:21:27 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1164)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1592)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+<div class="adnatHeader">
+  <h1>ADNAT</h1>
+</div>
+<div>
+
+<div>
+<p>Logged in as:   <a href="#">LogOut</a></p>
+<p>You are not the member of any organisations.<br>
+Join an existing one or create a new one</p>
+<div>
+
+<div>
+<h1>Organisations</h1>
+    <ul>
+        <% @organisation.each do |org| %>
+            <li><%=org.org_name =%></li>
+        <% end %>
+    </ul>
+<div>
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+        <p>
+            <%= form.label :org_name, "Organisation Name" %><br>
+            <%= form.text_field :org_name %>
+        </p>
+        <p>
+            <%= form.label :hourly_rate, "Hourly rate" %><br>
+            <%= form.text_field :hourly_rate %>
+        </p>
+    <%= form.submit %>
+    <% end %>
+</div>
+):
+1:    <div>
+2:    <div class="adnatHeader">
+3:      <h1>ADNAT</h1>
+4:    </div>
+5:    <div>
+6:    
+7:    <div>
+8:    <p>Logged in as:   <a href="#">LogOut</a></p>
+9:    <p>You are not the member of any organisations.<br>
+10:    Join an existing one or create a new one</p>
+11:    <div>
+12:    
+13:    <div>
+14:    <h1>Organisations</h1>
+15:        <ul>
+16:            <% @organisation.each do |org| %>
+17:                <li><%=org.org_name =%></li>
+18:            <% end %>
+19:        </ul>
+20:    <div>
+21:    
+22:    <div>
+23:        <h1>Create Organisation</h1>
+24:        <%= form_with model: @organisation%>
+25:            <p>
+26:                <%= form.label :org_name, "Organisation Name" %><br>
+27:                <%= form.text_field :org_name %>
+28:            </p>
+29:            <p>
+30:                <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:                <%= form.text_field :hourly_rate %>
+32:            </p>
+33:        <%= form.submit %>
+34:        <% end %>
+35:    </div>
+  
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:21:46 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1181)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2376)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+<div class="adnatHeader">
+  <h1>ADNAT</h1>
+</div>
+</div>
+
+<div>
+<p>Logged in as:   <a href="#">LogOut</a></p>
+<p>You are not the member of any organisations.<br>
+Join an existing one or create a new one</p>
+<div>
+
+<div>
+<h1>Organisations</h1>
+    <ul>
+        <% @organisation.each do |org| %>
+            <li><%=org.org_name =%></li>
+        <% end %>
+    </ul>
+<div>
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+        <p>
+            <%= form.label :org_name, "Organisation Name" %><br>
+            <%= form.text_field :org_name %>
+        </p>
+        <p>
+            <%= form.label :hourly_rate, "Hourly rate" %><br>
+            <%= form.text_field :hourly_rate %>
+        </p>
+    <%= form.submit %>
+    <% end %>
+</div>
+):
+1:    <div>
+2:    <div class="adnatHeader">
+3:      <h1>ADNAT</h1>
+4:    </div>
+5:    </div>
+6:    
+7:    <div>
+8:    <p>Logged in as:   <a href="#">LogOut</a></p>
+9:    <p>You are not the member of any organisations.<br>
+10:    Join an existing one or create a new one</p>
+11:    <div>
+12:    
+13:    <div>
+14:    <h1>Organisations</h1>
+15:        <ul>
+16:            <% @organisation.each do |org| %>
+17:                <li><%=org.org_name =%></li>
+18:            <% end %>
+19:        </ul>
+20:    <div>
+21:    
+22:    <div>
+23:        <h1>Create Organisation</h1>
+24:        <%= form_with model: @organisation%>
+25:            <p>
+26:                <%= form.label :org_name, "Organisation Name" %><br>
+27:                <%= form.text_field :org_name %>
+28:            </p>
+29:            <p>
+30:                <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:                <%= form.text_field :hourly_rate %>
+32:            </p>
+33:        <%= form.submit %>
+34:        <% end %>
+35:    </div>
+  
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:22:03 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1177)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 2353)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+    <div class="adnatHeader">
+    <h1>ADNAT</h1>
+    </div>
+</div>
+
+<div>
+<p>Logged in as:   <a href="#">LogOut</a></p>
+<p>You are not the member of any organisations.<br>
+Join an existing one or create a new one</p>
+</div>
+
+<div>
+<h1>Organisations</h1>
+    <ul>
+        <% @organisation.each do |org| %>
+            <li><%=org.org_name =%></li>
+        <% end %>
+    </ul>
+<div>
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+        <p>
+            <%= form.label :org_name, "Organisation Name" %><br>
+            <%= form.text_field :org_name %>
+        </p>
+        <p>
+            <%= form.label :hourly_rate, "Hourly rate" %><br>
+            <%= form.text_field :hourly_rate %>
+        </p>
+    <%= form.submit %>
+    <% end %>
+</div>
+):
+1:    <div>
+2:        <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:        </div>
+5:    </div>
+6:    
+7:    <div>
+8:    <p>Logged in as:   <a href="#">LogOut</a></p>
+9:    <p>You are not the member of any organisations.<br>
+10:    Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:    <h1>Organisations</h1>
+15:        <ul>
+16:            <% @organisation.each do |org| %>
+17:                <li><%=org.org_name =%></li>
+18:            <% end %>
+19:        </ul>
+20:    <div>
+21:    
+22:    <div>
+23:        <h1>Create Organisation</h1>
+24:        <%= form_with model: @organisation%>
+25:            <p>
+26:                <%= form.label :org_name, "Organisation Name" %><br>
+27:                <%= form.text_field :org_name %>
+28:            </p>
+29:            <p>
+30:                <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:                <%= form.text_field :hourly_rate %>
+32:            </p>
+33:        <%= form.submit %>
+34:        <% end %>
+35:    </div>
+  
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:25:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1172)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2339)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+  <div>
+      <h1>Create Organisation</h1>
+      <%= form_with model: @organisation%>
+      <p>
+        <%= form.label :org_name, "Organisation Name" %><br>
+        <%= form.text_field :org_name %>
+      </p>
+      <p>
+        <%= form.label :hourly_rate, "Hourly rate" %><br>
+        <%= form.text_field :hourly_rate %>
+      </p>
+      <%= form.submit %>
+    <% end %>
+  </div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    <div>
+7:      <p>Logged in as:   <a href="#">LogOut</a></p>
+8:      <p>You are not the member of any organisations.<br>
+9:        Join an existing one or create a new one</p>
+10:    </div>
+11:    <div>
+12:      <h1>Organisations</h1>
+13:      <ul>
+14:        <% @organisation.each do |org| %>
+15:          <li><%=org.org_name =%></li>
+16:        <% end %>
+17:      </ul>
+18:      <div>
+19:          <h1>Create Organisation</h1>
+20:          <%= form_with model: @organisation%>
+21:          <p>
+22:            <%= form.label :org_name, "Organisation Name" %><br>
+23:            <%= form.text_field :org_name %>
+24:          </p>
+25:          <p>
+26:            <%= form.label :hourly_rate, "Hourly rate" %><br>
+27:            <%= form.text_field :hourly_rate %>
+28:          </p>
+29:          <%= form.submit %>
+30:        <% end %>
+31:      </div>
+  
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:26:06 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1172)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2348)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+  <div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+    <p>
+      <%= form.label :org_name, "Organisation Name" %><br>
+      <%= form.text_field :org_name %>
+    </p>
+    <p>
+      <%= form.label :hourly_rate, "Hourly rate" %><br>
+      <%= form.text_field :hourly_rate %>
+    </p>
+    <%= form.submit %>
+  <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    <div>
+7:      <p>Logged in as:   <a href="#">LogOut</a></p>
+8:      <p>You are not the member of any organisations.<br>
+9:        Join an existing one or create a new one</p>
+10:    </div>
+11:    <div>
+12:      <h1>Organisations</h1>
+13:      <ul>
+14:        <% @organisation.each do |org| %>
+15:          <li><%=org.org_name =%></li>
+16:        <% end %>
+17:      </ul>
+18:      <div>
+19:        <h1>Create Organisation</h1>
+20:        <%= form_with model: @organisation%>
+21:        <p>
+22:          <%= form.label :org_name, "Organisation Name" %><br>
+23:          <%= form.text_field :org_name %>
+24:        </p>
+25:        <p>
+26:          <%= form.label :hourly_rate, "Hourly rate" %><br>
+27:          <%= form.text_field :hourly_rate %>
+28:        </p>
+29:        <%= form.submit %>
+30:      <% end %>
+31:    </div>
+  
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:34: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:26:36 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1178)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2354)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+
+  <div>
+      <h1>Create Organisation</h1>
+      <%= form_with model: @organisation%>
+      <p>
+        <%= form.label :org_name, "Organisation Name" %><br>
+        <%= form.text_field :org_name %>
+      </p>
+      <p>
+        <%= form.label :hourly_rate, "Hourly rate" %><br>
+        <%= form.text_field :hourly_rate %>
+      </p>
+      <%= form.submit %>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    
+14:    <div>
+15:      <h1>Organisations</h1>
+16:      <ul>
+17:        <% @organisation.each do |org| %>
+18:          <li><%=org.org_name =%></li>
+19:        <% end %>
+20:      </ul>
+21:    
+22:      <div>
+23:          <h1>Create Organisation</h1>
+24:          <%= form_with model: @organisation%>
+25:          <p>
+26:            <%= form.label :org_name, "Organisation Name" %><br>
+27:            <%= form.text_field :org_name %>
+28:          </p>
+29:          <p>
+30:            <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:            <%= form.text_field :hourly_rate %>
+32:          </p>
+33:          <%= form.submit %>
+34:        <% end %>
+35:      </div>
+36:    </div>
+  
+app/views/organisations/index.html.erb:39: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:39: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:39: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:39: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:39: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:39: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:27:12 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:17
+  Rendered organisations/index.html.erb within layouts/application (Duration: 11.8ms | Allocations: 4228)
+Completed 200 OK in 889ms (Views: 886.5ms | ActiveRecord: 1.4ms | Allocations: 1340584)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:27:14 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:17
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 575)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 7253)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:28:06 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1190)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2354)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+
+  <div>
+      <h1>Create Organisation</h1>
+      <%= form_with model: @organisation%>
+        <p>
+            <%= form.label :org_name, "Organisation Name" %><br>
+            <%= form.text_field :org_name %>
+        </p>
+        <p>
+            <%= form.label :hourly_rate, "Hourly rate" %><br>
+            <%= form.text_field :hourly_rate %>
+        </p>
+        <p>
+            <%= form.submit %>
+        </p>
+    <% end %>
+  </div>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    
+14:    <div>
+15:      <h1>Organisations</h1>
+16:      <ul>
+17:        <% @organisation.each do |org| %>
+18:          <li><%=org.org_name =%></li>
+19:        <% end %>
+20:      </ul>
+21:    
+22:      <div>
+23:          <h1>Create Organisation</h1>
+24:          <%= form_with model: @organisation%>
+25:            <p>
+26:                <%= form.label :org_name, "Organisation Name" %><br>
+27:                <%= form.text_field :org_name %>
+28:            </p>
+29:            <p>
+30:                <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:                <%= form.text_field :hourly_rate %>
+32:            </p>
+33:            <p>
+34:                <%= form.submit %>
+35:            </p>
+36:        <% end %>
+37:      </div>
+38:    </div>
+  
+app/views/organisations/index.html.erb:41: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:41: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:41: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:41: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:41: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:41: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:30:17 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1176)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2340)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+  <div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+    <p>
+      <%= form.label :org_name, "Organisation Name" %><br>
+      <%= form.text_field :org_name %>
+    </p>
+    <p>
+      <%= form.label :hourly_rate, "Hourly rate" %><br>
+      <%= form.text_field :hourly_rate %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    <div>
+7:      <p>Logged in as:   <a href="#">LogOut</a></p>
+8:      <p>You are not the member of any organisations.<br>
+9:        Join an existing one or create a new one</p>
+10:    </div>
+11:    <div>
+12:      <h1>Organisations</h1>
+13:      <ul>
+14:        <% @organisation.each do |org| %>
+15:          <li><%=org.org_name =%></li>
+16:        <% end %>
+17:      </ul>
+18:      <div>
+19:        <h1>Create Organisation</h1>
+20:        <%= form_with model: @organisation%>
+21:        <p>
+22:          <%= form.label :org_name, "Organisation Name" %><br>
+23:          <%= form.text_field :org_name %>
+24:        </p>
+25:        <p>
+26:          <%= form.label :hourly_rate, "Hourly rate" %><br>
+27:          <%= form.text_field :hourly_rate %>
+28:        </p>
+29:        <p>
+30:          <%= form.submit %>
+31:        </p>
+32:      <% end %>
+33:    </div>
+34:    </div>
+  
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:37: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:31:50 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1179)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2343)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+</div>
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+    <p>
+      <%= form.label :org_name, "Organisation Name" %><br>
+      <%= form.text_field :org_name %>
+    </p>
+    <p>
+      <%= form.label :hourly_rate, "Hourly rate" %><br>
+      <%= form.text_field :hourly_rate %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:      <h1>Organisations</h1>
+15:      <ul>
+16:        <% @organisation.each do |org| %>
+17:          <li><%=org.org_name =%></li>
+18:        <% end %>
+19:      </ul>
+20:    </div>
+21:    
+22:    <div>
+23:        <h1>Create Organisation</h1>
+24:        <%= form_with model: @organisation%>
+25:        <p>
+26:          <%= form.label :org_name, "Organisation Name" %><br>
+27:          <%= form.text_field :org_name %>
+28:        </p>
+29:        <p>
+30:          <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:          <%= form.text_field :hourly_rate %>
+32:        </p>
+33:        <p>
+34:          <%= form.submit %>
+35:        </p>
+36:      <% end %>
+37:    </div>
+  
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:33:25 +1000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 3821)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 6424)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:33:27 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1167)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1592)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+</div>
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with model: @organisation%>
+    <p>
+      <%= form.label :org_name, "Organisation Name" %><br>
+      <%= form.text_field :org_name %>
+    </p>
+    <p>
+      <%= form.label :hourly_rate, "Hourly rate" %><br>
+      <%= form.text_field :hourly_rate %>
+    </p>
+    <p>
+      <%= form.submit %>
+    </p>
+  <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:      <h1>Organisations</h1>
+15:      <ul>
+16:        <% @organisation.each do |org| %>
+17:          <li><%=org.org_name =%></li>
+18:        <% end %>
+19:      </ul>
+20:    </div>
+21:    
+22:    <div>
+23:        <h1>Create Organisation</h1>
+24:        <%= form_with model: @organisation%>
+25:        <p>
+26:          <%= form.label :org_name, "Organisation Name" %><br>
+27:          <%= form.text_field :org_name %>
+28:        </p>
+29:        <p>
+30:          <%= form.label :hourly_rate, "Hourly rate" %><br>
+31:          <%= form.text_field :hourly_rate %>
+32:        </p>
+33:        <p>
+34:          <%= form.submit %>
+35:        </p>
+36:      <% end %>
+37:    </div>
+  
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:40: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:33:44 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 4231)
+Completed 200 OK in 971ms (Views: 968.1ms | ActiveRecord: 1.0ms | Allocations: 1340611)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:34:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 270.2ms | Allocations: 148276)
+Completed 500 Internal Server Error in 275ms (ActiveRecord: 0.2ms | Allocations: 149459)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articles_path' for #<#<Class:0x00007fa5c68297e0>:0x00007fa5c60dbec0>
+Did you mean?  asset_path):
+    20: </div>
+    21: 
+    22: <div>
+    23: <%= form_with scope: :article, url: articles_path, local: true do |form| %>
+    24: <%end%>
+    25: </div>
+  
+app/views/organisations/index.html.erb:23
+Started GET "/organisations" for ::1 at 2019-10-26 13:34:40 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1738)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.5ms | Allocations: 2916)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"organisations"}, missing required keys: [:id]):
+    20: </div>
+    21: 
+    22: <div>
+    23: <%= form_with scope: :organisation, url: organisation_path, local: true do |form| %>
+    24: <%end%>
+    25: </div>
+  
+app/views/organisations/index.html.erb:23
+Started GET "/organisations" for ::1 at 2019-10-26 13:34:54 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1720)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms | Allocations: 2889)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"organisations"}, missing required keys: [:id]):
+    20: </div>
+    21: 
+    22: <div>
+    23: <%= form_with scope: :organisations, url: organisation_path, local: true do |form| %>
+    24: <%end%>
+    25: </div>
+  
+app/views/organisations/index.html.erb:23
+Started GET "/organisations" for ::1 at 2019-10-26 13:35:29 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1090)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2260)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+</div>
+
+<div>
+    <%= form_with model: @organisation%>
+    <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:      <h1>Organisations</h1>
+15:      <ul>
+16:        <% @organisation.each do |org| %>
+17:          <li><%=org.org_name =%></li>
+18:        <% end %>
+19:      </ul>
+20:    </div>
+21:    
+22:    <div>
+23:        <%= form_with model: @organisation%>
+24:        <% end %>
+25:    </div>
+  
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:35:50 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 737)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.2ms | Allocations: 8353)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:36:26 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1090)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 2257)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <ul>
+    <% @organisation.each do |org| %>
+      <li><%=org.org_name =%></li>
+    <% end %>
+  </ul>
+</div>
+
+<div>
+    <%= form_with model: @organisation%>
+    <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:      <h1>Organisations</h1>
+15:      <ul>
+16:        <% @organisation.each do |org| %>
+17:          <li><%=org.org_name =%></li>
+18:        <% end %>
+19:      </ul>
+20:    </div>
+21:    
+22:    <div>
+23:        <%= form_with model: @organisation%>
+24:        <% end %>
+25:    </div>
+  
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+app/views/organisations/index.html.erb:28: syntax error, unexpected end, expecting end-of-input
+Started GET "/organisations" for ::1 at 2019-10-26 13:37:38 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 931)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.1ms | Allocations: 8546)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:38:16 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 17.8ms | Allocations: 5194)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.1ms | Allocations: 12713)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:38:37 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 984)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.1ms | Allocations: 7669)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:38:39 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1252)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.2ms | Allocations: 8848)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:38:47 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1252)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.1ms | Allocations: 8852)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:39:05 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1434)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.1ms | Allocations: 9034)
+
+
+Started POST "/organisations" for ::1 at 2019-10-26 13:39:15 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"N7ALtPLqcHqIAyEFbTDbma7KbJfHdesto+Q0m3LqHUSJrZP8WP64ipuVKDEIq1rPZUDGdOk382Udoa75X1qtMg==", "organisation"=>{"org_name"=>"testyMctesting", "hourly_rate"=>"12"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.8ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "testyMctesting"], ["hourly_rate", 12.0], ["created_at", "2019-10-26 03:39:15.523697"], ["updated_at", "2019-10-26 03:39:15.523697"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/2
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms | Allocations: 2726)
+
+
+Started GET "/organisations/2" for ::1 at 2019-10-26 13:39:15 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:7:in `show'
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.3ms | Allocations: 2857)
+
+
+  
+ActionController::MissingExactTemplate (OrganisationsController#show is missing a template for request formats: text/html):
+  
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/2" for ::1 at 2019-10-26 13:39:56 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1196)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1751)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14:   <h1>Organisations</h1>
+    15:   <ul>
+    16:     <% @organisation.each do |org| %>
+    17:       <li><%=org.org_name =%></li>
+    18:     <% end %>
+    19:   </ul>
+  
+app/views/organisations/index.html.erb:16
+app/controllers/organisations_controller.rb:7:in `show'
+Started GET "/organisations" for ::1 at 2019-10-26 13:39:59 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 4446)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.9ms | Allocations: 11462)
+
+
+Started POST "/organisations" for ::1 at 2019-10-26 13:40:10 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"0HHW4VTsEn10kaqVvIHy3n2vIv0Csr72ihSqQSKBfY5ubE6p/vjajWcHo6HZGnOItiWIHizwpr40UTAjDzHN+A==", "organisation"=>{"org_name"=>"smellyMcSmelly", "hourly_rate"=>"13"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.5ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "smellyMcSmelly"], ["hourly_rate", 13.0], ["created_at", "2019-10-26 03:40:10.998879"], ["updated_at", "2019-10-26 03:40:10.998879"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/3
+Completed 302 Found in 30ms (ActiveRecord: 1.4ms | Allocations: 2496)
+
+
+Started GET "/organisations/3" for ::1 at 2019-10-26 13:40:11 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"3"}
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 1232)
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 1622)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    13: <div>
+    14:   <h1>Organisations</h1>
+    15:   <ul>
+    16:     <% @organisation.each do |org| %>
+    17:       <li><%=org.org_name =%></li>
+    18:     <% end %>
+    19:   </ul>
+  
+app/views/organisations/index.html.erb:16
+app/controllers/organisations_controller.rb:7:in `show'
+Started GET "/organisations/3" for ::1 at 2019-10-26 13:41:23 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 790)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:41:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 4441)
+Completed 200 OK in 14ms (Views: 11.8ms | ActiveRecord: 0.5ms | Allocations: 11595)
+
+
+Started POST "/organisations" for ::1 at 2019-10-26 13:41:27 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"8zwfihbpqlY7LiKrsIDrFxEz46ChCfkP+/iEbweLp4RNIYfCvP1ipii4K5/VG2pB2rlJQ49L4UdFvR4NKjsX8g==", "organisation"=>{"org_name"=>"asda", "hourly_rate"=>"123"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.4ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "asda"], ["hourly_rate", 123.0], ["created_at", "2019-10-26 03:41:27.578748"], ["updated_at", "2019-10-26 03:41:27.578748"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/4
+Completed 302 Found in 8ms (ActiveRecord: 1.3ms | Allocations: 2490)
+
+
+Started GET "/organisations/4" for ::1 at 2019-10-26 13:41:27 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"4"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/organisations" for ::1 at 2019-10-26 13:41:27 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1145)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 7812)
+
+
