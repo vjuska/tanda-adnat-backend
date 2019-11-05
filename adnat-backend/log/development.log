@@ -8749,3 +8749,2602 @@ Processing by OrganisationsController#index as HTML
 Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.2ms | Allocations: 7812)
 
 
+Started GET "/organisations" for ::1 at 2019-11-05 17:58:30 +1000
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 30.6ms | Allocations: 6847)
+Completed 200 OK in 1254ms (Views: 1239.7ms | ActiveRecord: 1.1ms | Allocations: 1344537)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateEmployees (20191105081022)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "employees" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "org_id" varchar, "user_id" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191105081022"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShifts (20191105081409)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateShifts (20191105081536)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "shifts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "employee_id" varchar, "shift_start" datetime, "shift_finish" datetime, "break_length" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191105081536"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/users" for ::1 at 2019-11-05 18:18:16 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 6438)
+Completed 200 OK in 19ms (Views: 15.6ms | ActiveRecord: 0.7ms | Allocations: 14497)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:19:12 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4237)
+Completed 200 OK in 14ms (Views: 12.2ms | ActiveRecord: 0.2ms | Allocations: 12007)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:20:36 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 5840)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 7012)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:20:49 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1200)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1624)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <table>
+    <% @organisation.each do |org| %>
+    <tr>
+      <td><%=org.org_name =%></td>
+      <td><%=org.hourly_rate =%></td>
+      <td><%= link_to 'Edit', edit_organistations_path(org) %></td>
+      <td><%= link_to 'Delete', organisations_path(org),
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with scope: :organisation, url: organisations_path, local: true do |form| %>
+    <p>
+    <%= form.label :org_name %><br>
+    <%= form.text_field :org_name %>
+    </p>
+ 
+    <p>
+    <%= form.label :hourly_rate %><br>
+    <%= form.text_field :hourly_rate %>
+    </p>
+
+    <p>
+    <%= form.submit %>
+    </p>
+    <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:      <h1>Organisations</h1>
+15:      <table>
+16:        <% @organisation.each do |org| %>
+17:        <tr>
+18:          <td><%=org.org_name =%></td>
+19:          <td><%=org.hourly_rate =%></td>
+20:          <td><%= link_to 'Edit', edit_organistations_path(org) %></td>
+21:          <td><%= link_to 'Delete', organisations_path(org),
+22:        </tr>
+23:        <% end %>
+24:      </table>
+25:    </div>
+26:    
+27:    
+28:    <div>
+29:        <h1>Create Organisation</h1>
+30:        <%= form_with scope: :organisation, url: organisations_path, local: true do |form| %>
+31:        <p>
+32:        <%= form.label :org_name %><br>
+33:        <%= form.text_field :org_name %>
+34:        </p>
+35:     
+36:        <p>
+37:        <%= form.label :hourly_rate %><br>
+38:        <%= form.text_field :hourly_rate %>
+39:        </p>
+40:    
+41:        <p>
+42:        <%= form.submit %>
+43:        </p>
+44:        <% end %>
+45:    </div>
+  
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/organisations" for ::1 at 2019-11-05 18:21:41 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered organisations/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1219)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2418)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div>
+  <div class="adnatHeader">
+    <h1>ADNAT</h1>
+  </div>
+</div>
+
+<div>
+  <p>Logged in as:   <a href="#">LogOut</a></p>
+  <p>You are not the member of any organisations.<br>
+    Join an existing one or create a new one</p>
+</div>
+
+<div>
+  <h1>Organisations</h1>
+  <table>
+    <% @organisation.each do |org| %>
+    <tr>
+      <td><%=org.org_name =%></td>
+      <td><%=org.hourly_rate =%></td>
+      <td><%= link_to 'Edit', edit_organistations_path(org) =%></td>
+      <td><%= link_to 'Delete', organisations_path(org) =%</td>
+    </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<div>
+    <h1>Create Organisation</h1>
+    <%= form_with scope: :organisation, url: organisations_path, local: true do |form| %>
+    <p>
+    <%= form.label :org_name %><br>
+    <%= form.text_field :org_name %>
+    </p>
+ 
+    <p>
+    <%= form.label :hourly_rate %><br>
+    <%= form.text_field :hourly_rate %>
+    </p>
+
+    <p>
+    <%= form.submit %>
+    </p>
+    <% end %>
+</div>
+
+):
+1:    <div>
+2:      <div class="adnatHeader">
+3:        <h1>ADNAT</h1>
+4:      </div>
+5:    </div>
+6:    
+7:    <div>
+8:      <p>Logged in as:   <a href="#">LogOut</a></p>
+9:      <p>You are not the member of any organisations.<br>
+10:        Join an existing one or create a new one</p>
+11:    </div>
+12:    
+13:    <div>
+14:      <h1>Organisations</h1>
+15:      <table>
+16:        <% @organisation.each do |org| %>
+17:        <tr>
+18:          <td><%=org.org_name =%></td>
+19:          <td><%=org.hourly_rate =%></td>
+20:          <td><%= link_to 'Edit', edit_organistations_path(org) =%></td>
+21:          <td><%= link_to 'Delete', organisations_path(org) =%</td>
+22:        </tr>
+23:        <% end %>
+24:      </table>
+25:    </div>
+26:    
+27:    
+28:    <div>
+29:        <h1>Create Organisation</h1>
+30:        <%= form_with scope: :organisation, url: organisations_path, local: true do |form| %>
+31:        <p>
+32:        <%= form.label :org_name %><br>
+33:        <%= form.text_field :org_name %>
+34:        </p>
+35:     
+36:        <p>
+37:        <%= form.label :hourly_rate %><br>
+38:        <%= form.text_field :hourly_rate %>
+39:        </p>
+40:    
+41:        <p>
+42:        <%= form.submit %>
+43:        </p>
+44:        <% end %>
+45:    </div>
+  
+app/views/organisations/index.html.erb:21: syntax error, unexpected '=', expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:21: syntax error, unexpected '=', expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:21: syntax error, unexpected '=', expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:21: syntax error, unexpected '=', expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:21: syntax error, unexpected '=', expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+app/views/organisations/index.html.erb:21: syntax error, unexpected '=', expecting ')'
+app/views/organisations/index.html.erb:22: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:24: unknown regexp options - tabl
+app/views/organisations/index.html.erb:24: unmatched close parenthesis: /tr>
+app/views/organisations/index.html.erb:25: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:29: unknown regexp option - h
+app/views/organisations/index.html.erb:29: syntax error, unexpected tINTEGER, expecting ')'
+app/views/organisations/index.html.erb:31: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:34: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:39: unknown regexp option - p
+app/views/organisations/index.html.erb:41: syntax error, unexpected '<'
+app/views/organisations/index.html.erb:43: syntax error, unexpected '<', expecting ')'
+app/views/organisations/index.html.erb:45: unknown regexp options - dv
+app/views/organisations/index.html.erb:48: unterminated string meets end of file
+app/views/organisations/index.html.erb:48: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/organisations" for ::1 at 2019-11-05 18:21:54 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 139.6ms | Allocations: 79692)
+Completed 500 Internal Server Error in 143ms (ActiveRecord: 0.3ms | Allocations: 80873)
+
+
+  
+ActionView::Template::Error (undefined method `edit_organistations_path' for #<#<Class:0x00007fe3fdf4b3f0>:0x00007fe3fdf49438>
+Did you mean?  edit_organisation_path
+               edit_organisation_url):
+    17:     <tr>
+    18:       <td><%=org.org_name =%></td>
+    19:       <td><%=org.hourly_rate =%></td>
+    20:       <td><%= link_to 'Edit', edit_organistations_path(org) =%></td>
+    21:       <td><%= link_to 'Delete', organisations_path(org) =%></td>
+    22:     </tr>
+    23:     <% end %>
+  
+app/views/organisations/index.html.erb:20
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-11-05 18:22:33 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 133.2ms | Allocations: 79630)
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.2ms | Allocations: 80802)
+
+
+  
+ActionView::Template::Error (undefined method `edit_organistation_path' for #<#<Class:0x00007fe3f9d7e030>:0x00007fe3f9d7c550>
+Did you mean?  edit_organisation_path
+               edit_organisation_url):
+    17:     <tr>
+    18:       <td><%=org.org_name =%></td>
+    19:       <td><%=org.hourly_rate =%></td>
+    20:       <td><%= link_to 'Edit', edit_organistation_path(org) =%></td>
+    21:       <td><%= link_to 'Delete', organisations_path(org),
+    22:       method: :delete,
+    23:       data: {confirm: 'are you sure?'} =%></td>
+  
+app/views/organisations/index.html.erb:20
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-11-05 18:22:38 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1837)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.2ms | Allocations: 9457)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:22:59 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1794)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 9393)
+
+
+Started DELETE "/organisations.1" for ::1 at 2019-11-05 18:23:22 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/organisations.1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-11-05 18:25:37 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 145.4ms | Allocations: 82901)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.6ms | Allocations: 84424)
+
+
+  
+ActionView::Template::Error (undefined method `edit_organistation_path' for #<#<Class:0x00007fe3ff5789c0>:0x00007fe3ff5830a0>
+Did you mean?  edit_organisation_path
+               edit_organisation_url):
+    17:     <tr>
+    18:       <td><%=org.org_name =%></td>
+    19:       <td><%=org.hourly_rate =%></td>
+    20:       <td><%= link_to 'Edit', edit_organistation_path(org) =%></td>
+    21:       <td><%= link_to 'Delete', organisations_path(org),
+    22:       method: :delete,
+    23:       data: {confirm: 'are you sure?'} =%></td>
+  
+app/views/organisations/index.html.erb:20
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-11-05 18:26:57 +1000
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 214.1ms | Allocations: 82720)
+Completed 500 Internal Server Error in 230ms (ActiveRecord: 0.7ms | Allocations: 85278)
+
+
+  
+ActionView::Template::Error (undefined method `edit_organistatio_path' for #<#<Class:0x00007f9322b0b870>:0x00007f9322b094a8>
+Did you mean?  edit_organisation_path
+               edit_organisation_url):
+    17:     <tr>
+    18:       <td><%=org.org_name =%></td>
+    19:       <td><%=org.hourly_rate =%></td>
+    20:       <td><%= link_to 'Edit', edit_organistatio_path(org) =%></td>
+    21:       <td><%= link_to 'Delete', organisations_path(org),
+    22:       method: :delete,
+    23:       data: {confirm: 'are you sure?'} =%></td>
+  
+app/views/organisations/index.html.erb:20
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-11-05 18:27:09 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 146.1ms | Allocations: 79554)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.3ms | Allocations: 80767)
+
+
+  
+ActionView::Template::Error (undefined method `edit_organistation_path' for #<#<Class:0x00007f932884b378>:0x00007f9328849988>
+Did you mean?  edit_organisation_path
+               edit_organisation_url):
+    17:     <tr>
+    18:       <td><%=org.org_name =%></td>
+    19:       <td><%=org.hourly_rate =%></td>
+    20:       <td><%= link_to 'Edit', edit_organistation_path(org) =%></td>
+    21:       <td><%= link_to 'Delete', organisations_path(org),
+    22:       method: :delete,
+    23:       data: {confirm: 'are you sure?'} =%></td>
+  
+app/views/organisations/index.html.erb:20
+app/views/organisations/index.html.erb:16
+Started GET "/organisations" for ::1 at 2019-11-05 18:27:24 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 7.1ms | Allocations: 4646)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 11.9ms | Allocations: 6162)
+Completed 200 OK in 849ms (Views: 846.8ms | ActiveRecord: 0.2ms | Allocations: 1342435)
+
+
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:27:27 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.1ms | Allocations: 840)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1046)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.4ms | Allocations: 8794)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:27:31 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"27EliqqgslytxVeugJDwFynS7FGKhwVFMasIqgeOHayqy7p9JvGJEbWAgQHHSSAmEtIXfzJyuNaSy7HCJY6x+A==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.42"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.8ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.42], ["created_at", "2019-11-05 08:27:31.738661"], ["updated_at", "2019-11-05 08:27:31.738661"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/5
+Completed 302 Found in 9ms (ActiveRecord: 1.7ms | Allocations: 2660)
+
+
+Started GET "/organisations/5" for ::1 at 2019-11-05 18:27:31 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"5"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 928)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:27:31 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1740)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 8408)
+
+
+Started DELETE "/organisations.1" for ::1 at 2019-11-05 18:27:44 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/organisations.1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:28:09 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.7ms | Allocations: 704)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 788)
+Completed 200 OK in 15ms (Views: 12.0ms | ActiveRecord: 0.2ms | Allocations: 7946)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:28:12 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"57odToIfgeY2K8SWt//MzcX1kGjnsX8v5qcpy2fdpYaWwIK5Dk66qy5uEjnwJhz8/vVrRl9EwrxFx5CjRd0J0g==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.42"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.5ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.42], ["created_at", "2019-11-05 08:28:12.479744"], ["updated_at", "2019-11-05 08:28:12.479744"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/6
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms | Allocations: 2439)
+
+
+Started GET "/organisations/6" for ::1 at 2019-11-05 18:28:12 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"6"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:28:12 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1862)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 8534)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:29:11 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"v6g80N4U/trQwOWFSi2Oz3cn0N6rK+WD0s8Nd2IGmgwBtaSYdAA2KsNW7LEvtg+ZvK16PYVp/ctsipcVT7Yqeg==", "organisation"=>{"org_name"=>"tits", "hourly_rate"=>"43"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.3ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "tits"], ["hourly_rate", 43.0], ["created_at", "2019-11-05 08:29:11.528880"], ["updated_at", "2019-11-05 08:29:11.528880"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/7
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms | Allocations: 6161)
+
+
+Started GET "/organisations/7" for ::1 at 2019-11-05 18:29:11 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"7"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 929)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:29:11 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.0ms | Allocations: 726)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2597)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 13128)
+
+
+Started GET "/organisations/7/edit" for ::1 at 2019-11-05 18:29:14 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.2ms | Allocations: 705)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 899)
+Completed 200 OK in 14ms (Views: 10.1ms | ActiveRecord: 0.3ms | Allocations: 8314)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:29:17 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Qt56/F5ZchEWz9qLaat5uyI7zCGd5bgDfLHqBYcVkz8zpOUL0ghJXA6KDCQucqmKGTs3DyUQBZDf0VNtpRU/aw==", "organisation"=>{"org_name"=>"tits", "hourly_rate"=>"43.1"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.5ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "tits"], ["hourly_rate", 43.1], ["created_at", "2019-11-05 08:29:17.755890"], ["updated_at", "2019-11-05 08:29:17.755890"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/8
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms | Allocations: 2420)
+
+
+Started GET "/organisations/8" for ::1 at 2019-11-05 18:29:17 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"8"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:29:17 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2095)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 8769)
+
+
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:29:20 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.1ms | Allocations: 704)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.6ms | Allocations: 788)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 7945)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:29:23 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Aw19xh2w02M64Mm1Ft/O1R/U6rudsspQUQuWyaU6+9Zyd+IxkeHoLiKlHxpRBh7kJNQRlSVHd8Pyay+hhzpXgg==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.44"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.4ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.44], ["created_at", "2019-11-05 08:29:23.377958"], ["updated_at", "2019-11-05 08:29:23.377958"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/9
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms | Allocations: 2426)
+
+
+Started GET "/organisations/9" for ::1 at 2019-11-05 18:29:23 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"9"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 351)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:29:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.9ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2215)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 8886)
+
+
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:29:28 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.6ms | Allocations: 704)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.1ms | Allocations: 788)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.3ms | Allocations: 7947)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:29:35 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"GkGGkI3itb8z6f9a3jP4nG+NCNA0GaUzuG9u1aei0cVrOxlnAbOO8iusKfWZ6iitVI3z/ozsGKAbD9e9haJ9kQ==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.3"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.5ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.3], ["created_at", "2019-11-05 08:29:35.068062"], ["updated_at", "2019-11-05 08:29:35.068062"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/10
+Completed 302 Found in 7ms (ActiveRecord: 1.5ms | Allocations: 2433)
+
+
+Started GET "/organisations/10" for ::1 at 2019-11-05 18:29:35 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"10"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:29:35 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2336)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 9004)
+
+
+Started GET "/organisations/10/edit" for ::1 at 2019-11-05 18:30:44 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 765)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 1.7ms | Allocations: 849)
+Completed 200 OK in 15ms (Views: 8.5ms | ActiveRecord: 0.6ms | Allocations: 11831)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:30:49 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"e4JY9mk+fHp873GlLFqCjmF2c/SsG6ATXeGacC1NLy8K+McB5W9HN2Sqpwprg1K/WnaI2hTuHYD+gSMYD02Dew==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.4"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.6ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.4], ["created_at", "2019-11-05 08:30:49.692851"], ["updated_at", "2019-11-05 08:30:49.692851"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/11
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms | Allocations: 2462)
+
+
+Started GET "/organisations/11" for ::1 at 2019-11-05 18:30:49 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"11"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 924)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:30:49 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2475)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 9145)
+
+
+Started DELETE "/organisations.1" for ::1 at 2019-11-05 18:30:53 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/organisations.1"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-11-05 18:31:18 +1000
+Processing by LoginController#index as HTML
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 246)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 7442)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:31:24 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 6318)
+Completed 200 OK in 23ms (Views: 18.2ms | ActiveRecord: 0.7ms | Allocations: 14263)
+
+
+Started DELETE "/users/34" for ::1 at 2019-11-05 18:31:28 +1000
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qXd7rGnsSmlwzxt1TyQxnglKuo7RoKebWnDhnY2NXvUXauPkw/iCmWNZEkEqv7DIwsAQbf/iv9PkNXv/oD3ugw==", "id"=>"34"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:39:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 34]]
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms | Allocations: 2632)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:31:28 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 927)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 7594)
+
+
+Started DELETE "/users/33" for ::1 at 2019-11-05 18:31:30 +1000
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"HCbHlEXT2Ifx5/q+prIbWcQOYE5hQNP4KQ7wpplTaRyiO1/c78cQd+Jx84rDKZoPD4TKrU8Cy7CXS2rEtOPZag==", "id"=>"33"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:39:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 33]]
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms | Allocations: 2489)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:31:30 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 811)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 7477)
+
+
+Started DELETE "/users/32" for ::1 at 2019-11-05 18:31:31 +1000
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hUSIH5TrPZ5Iz7TUOC+S0EyT6kCSpHIvfp7WCfNID4I7WRBXPv/1bltZveBdtBOGhxlAo7zmamfA20xr3vi/9A==", "id"=>"32"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:39:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+  [1m[36mUser Destroy (0.3ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 32]]
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:40:in `destroy'
+Redirected to http://localhost:3000/users
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms | Allocations: 2488)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:31:31 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 695)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 7361)
+
+
+Started GET "/users/31/edit" for ::1 at 2019-11-05 18:31:32 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.9ms | Allocations: 1967)
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2299)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 9591)
+
+
+Started PATCH "/users/31" for ::1 at 2019-11-05 18:31:34 +1000
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"5XFK4dr2k6F/ioyUjHCwbsnWpvZFChbEn2GiuMzTRSVZuYPALkKH5y09ic7NHYiFxAd4EnboXrcFqKXxkJGh1w==", "user"=>{"first_name"=>"Jesse Cunningham", "last_name"=>"Creech2", "email_address"=>"jesse.creech@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+[31mUnpermitted parameter: :password_confirmation[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "last_name" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_name", "Creech2"], ["password", "$2a$12$5J9mzSNGjg9vODbGifGslOOH3lX/XPm/ERg6b5jcX4iX1cOXAfYTq"], ["updated_at", "2019-11-05 08:31:35.149042"], ["id", 31]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+Redirected to http://localhost:3000/users/31
+Completed 302 Found in 246ms (ActiveRecord: 1.9ms | Allocations: 3419)
+
+
+Started GET "/users/31" for ::1 at 2019-11-05 18:31:35 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 289)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 7596)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:31:38 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 697)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 7367)
+
+
+Started GET "/users/31/edit" for ::1 at 2019-11-05 18:31:41 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 2.9ms | Allocations: 1244)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1328)
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.5ms | Allocations: 8489)
+
+
+Started PATCH "/users/31" for ::1 at 2019-11-05 18:31:44 +1000
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"CEPt6p9HvJuPMExGtuajNLsgYDgHuEocCbwAg8VVGN60iyTLa/Oo3d2HSRz3i5vftvG+3DRaAm+TdQfKmRf8LA==", "user"=>{"first_name"=>"Jesse Cunningham", "last_name"=>"Creech", "email_address"=>"jesse.creech@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+[31mUnpermitted parameter: :password_confirmation[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Update (0.3ms)[0m  [1m[33mUPDATE "users" SET "last_name" = ?, "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_name", "Creech"], ["password", "$2a$12$hRWGZTHcB7DYf3dhkBf6aenS9YAI7J24qFyGcrHSxgf1.6aQ8iJk."], ["updated_at", "2019-11-05 08:31:44.304263"], ["id", 31]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+Redirected to http://localhost:3000/users/31
+Completed 302 Found in 242ms (ActiveRecord: 2.0ms | Allocations: 3221)
+
+
+Started GET "/users/31" for ::1 at 2019-11-05 18:31:44 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.1ms | Allocations: 7272)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:32:00 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.1ms | Allocations: 521)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 2465)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.2ms | Allocations: 9131)
+
+
+Started DELETE "/organisations.9" for ::1 at 2019-11-05 18:32:04 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/organisations.9"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:32:13 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.2ms | Allocations: 704)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 788)
+Completed 200 OK in 14ms (Views: 11.4ms | ActiveRecord: 0.2ms | Allocations: 7946)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:32:54 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 726)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2783)
+Completed 200 OK in 17ms (Views: 15.5ms | ActiveRecord: 0.1ms | Allocations: 10392)
+
+
+Started DELETE "/organisations/11" for ::1 at 2019-11-05 18:32:57 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"gh+YvTJPgP9bJQa2Qdc/I2sKqGXZfTQE8SQgydIAGBk8AgD1mFtID0izD4IkTL51oIAChvc/LExPYbqr/7Cobw==", "id"=>"11"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 11]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms | Allocations: 2488)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:32:57 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 520)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2103)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.1ms | Allocations: 8770)
+
+
+Started DELETE "/organisations/10" for ::1 at 2019-11-05 18:32:59 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"I1N96QZyrpAlJiS2XYq2lBYQSgHi41Yw6MeyhIC3PAmdTuWhrGZmYDawLYI4ETfC3Zrg4syhTnhWgijmrQeMfw==", "id"=>"10"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 10]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 8ms (ActiveRecord: 1.9ms | Allocations: 2489)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:32:59 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.0ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1999)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 8672)
+
+
+Started DELETE "/organisations/9" for ::1 at 2019-11-05 18:33:01 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vC6J2uW50mufIh2upmAdMnzjq92R3aGH2yXZ/yssilgCMxGST60am4y0FJrD+5xkt2kBPr+fuc9lYEOdBpw6Lg==", "id"=>"9"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 9]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 9ms (ActiveRecord: 1.8ms | Allocations: 2946)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:01 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.9ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1902)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 8571)
+
+
+Started DELETE "/organisations/8" for ::1 at 2019-11-05 18:33:03 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"XBBAe8HeZ17lVhEkh+v1bUp7frut0jL0bJ1KAN7ZKiriDdgza8qvrvbAGBDicHQ7gfHUWIOQKrzS2NBi82maXA==", "id"=>"8"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 8]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms | Allocations: 2486)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:03 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.1ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1805)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 8470)
+
+
+Started DELETE "/organisations/7" for ::1 at 2019-11-05 18:33:04 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Yea1GJEpOMh+XBcZOCCazARSf5frZBgQcSV0oGhc3i/f+y1QOz3wOG3KHi1duxuaz9jVdMUmAFjPYO7CRexuWQ==", "id"=>"7"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 7]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms | Allocations: 2487)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:04 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.9ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1716)
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 0.2ms | Allocations: 8388)
+
+
+Started DELETE "/organisations/6" for ::1 at 2019-11-05 18:33:10 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"t/XNypt0RyFuPvIK3FyB7cyKi3r9Gb7Mt6s0B4USrioJ6FWCMWCP0X2o+z65xwC7BwAhmdNbpoQJ7q5lqKIeXA==", "id"=>"6"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 8ms (ActiveRecord: 1.8ms | Allocations: 2487)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:10 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.0ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1619)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.2ms | Allocations: 8280)
+
+
+Started DELETE "/organisations/5" for ::1 at 2019-11-05 18:33:12 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"pFz1kIcPjyFuimqi1ThJLtm1xTl1xoGr3dPaZnJjQRYaQW3YLRtH0X0cY5awo8h4Ej9v2luEmeNjlkAEX9PxYA==", "id"=>"5"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 8ms (ActiveRecord: 2.2ms | Allocations: 2484)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:12 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1522)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.1ms | Allocations: 8190)
+
+
+Started DELETE "/organisations/4" for ::1 at 2019-11-05 18:33:14 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"xNrYJXC2aa0Xv7eLWF3INyXURSjAc40IUPpWrsQ4Z6x6x0Bt2qKhXQQpvr89xklh7l7vy+4xlUDuv8zM6YjX2g==", "id"=>"4"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms | Allocations: 2487)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:14 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.9ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1432)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.1ms | Allocations: 8096)
+
+
+Started DELETE "/organisations/3" for ::1 at 2019-11-05 18:33:16 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"hkBGDCeQXSCfPTUcqwYtY4syK/5em92M0cWd6x4hjuo4Xd5EjYSV0IyrPCjOnaw1QLiBHXDZxcRvgAeJM5E+nA==", "id"=>"3"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms | Allocations: 2490)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:16 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.0ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1343)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 8005)
+
+
+Started DELETE "/organisations/2" for ::1 at 2019-11-05 18:33:17 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Y+ia1ygXhOfNw/lbKTp9KW7H6xiPcVvZd+5w8ijxRxfd9QKfggNMF95V8G9Mofx/pU1B+6EzQ5HJq+qQBUH3YQ==", "id"=>"2"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms | Allocations: 2483)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:17 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1254)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.2ms | Allocations: 7923)
+
+
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:33:18 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.5ms | Allocations: 711)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 905)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.1ms | Allocations: 8208)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:33:21 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"FnHJnbTDT0o6Dlw8lU7fzoq/7Z1yPG1CKnfgYlEGJJVnC1ZqOJJ0ByJLipPSlw//sb8Ws8rJ0NGJF1kKcwaIwQ==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.41"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.4ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.41], ["created_at", "2019-11-05 08:33:21.764159"], ["updated_at", "2019-11-05 08:33:21.764159"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/12
+Completed 302 Found in 6ms (ActiveRecord: 1.2ms | Allocations: 2426)
+
+
+Started GET "/organisations/12" for ::1 at 2019-11-05 18:33:21 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"12"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 352)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:21 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1353)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.1ms | Allocations: 8021)
+
+
+Started GET "/organisations/12/edit" for ::1 at 2019-11-05 18:33:30 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.7ms | Allocations: 704)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 788)
+Completed 200 OK in 15ms (Views: 13.0ms | ActiveRecord: 0.5ms | Allocations: 7951)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:33:34 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"3aQYJGIPKYZH4wQ9YfeN0sMhJkLxqe3zGuFuyAnf1pOs3ofT7l4Sy1+m0pImLl3j+CHdbElcUGC5gdegK996xw==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.41"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.4ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.41], ["created_at", "2019-11-05 08:33:34.691198"], ["updated_at", "2019-11-05 08:33:34.691198"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/13
+Completed 302 Found in 7ms (ActiveRecord: 1.2ms | Allocations: 2425)
+
+
+Started GET "/organisations/13" for ::1 at 2019-11-05 18:33:34 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"13"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:34 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1448)
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.1ms | Allocations: 8120)
+
+
+Started GET "/organisations/13/edit" for ::1 at 2019-11-05 18:33:51 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.9ms | Allocations: 911)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1276)
+Completed 200 OK in 17ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 9371)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:33:54 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"hZAl5gq+RDvXFOlmkLB0Ag7G1D9dYwIyUp315DT1Enf06roRhu9/ds9RP8nXaaQzNcYvEeWWv6Hx/UyMFvW+Iw==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.42"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.5ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.42], ["created_at", "2019-11-05 08:33:54.063240"], ["updated_at", "2019-11-05 08:33:54.063240"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/14
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms | Allocations: 2427)
+
+
+Started GET "/organisations/14" for ::1 at 2019-11-05 18:33:54 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"14"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 340)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:54 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 522)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1792)
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.1ms | Allocations: 8601)
+
+
+Started DELETE "/organisations/14" for ::1 at 2019-11-05 18:33:56 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lS+ZG4P3vr1CF0rvgpcyd5MB9MU69ZVveVpHEVC6ycwrMgFTKeN2TVGBQ9vnDLMhWIteJhS3jSfHH91zfQp5ug==", "id"=>"14"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 14]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms | Allocations: 2489)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:56 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1448)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.1ms | Allocations: 8114)
+
+
+Started DELETE "/organisations/13" for ::1 at 2019-11-05 18:33:58 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/Il6G3zHjwlgO/U3OmP6j5VmUIdTIHC7PpBJ6X5JS8NClOJT1tNH+XOt/ANf+HvZXuz6ZH1iaPOA1dOLU/n7tQ==", "id"=>"13"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 13]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.8ms | Allocations: 2488)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:33:58 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1351)
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 8019)
+
+
+Started DELETE "/organisations/12" for ::1 at 2019-11-05 18:34:00 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8YTB2Dav1N9UtHr29MZ6F0GQLjbysjFrsUdjOirA0iRPmVmQnLscL0cic8KRXftBihqE1dzwKSMPAvlYB3BiUg==", "id"=>"12"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 12]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 6ms (ActiveRecord: 1.6ms | Allocations: 2486)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:34:00 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1254)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms | Allocations: 7920)
+
+
+Started GET "/organisations/1/edit" for ::1 at 2019-11-05 18:34:01 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.4ms | Allocations: 704)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.8ms | Allocations: 813)
+Completed 200 OK in 13ms (Views: 10.1ms | ActiveRecord: 0.1ms | Allocations: 7977)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:34:05 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"Xcm36Ww+T8X7+iVLGL6wjNEqzA6q5RuZxU7FpUhdEqEssyge4G90iOO/8+RfZ2C96io3IBIQpgpmLnzNal2+9Q==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.4ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.0], ["created_at", "2019-11-05 08:34:05.222882"], ["updated_at", "2019-11-05 08:34:05.222882"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/15
+Completed 302 Found in 7ms (ActiveRecord: 2.0ms | Allocations: 2424)
+
+
+Started GET "/organisations/15" for ::1 at 2019-11-05 18:34:05 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"15"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:34:05 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.9ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1343)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 8013)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:34:46 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.6ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 903)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1262)
+Completed 200 OK in 16ms (Views: 11.9ms | ActiveRecord: 0.6ms | Allocations: 9349)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:34:59 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"VzZ7qouVMFllY/NNHvjHgQUCVaQGbfyZ0SUcsffgT+QmTORdB8QLFH0mJeJZIRewPgKuir6YQQpyRaXZ1eDjsA==", "organisation"=>{"org_name"=>"Test Org1", "hourly_rate"=>"10.02"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.5ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org1"], ["hourly_rate", 10.02], ["created_at", "2019-11-05 08:34:59.699533"], ["updated_at", "2019-11-05 08:34:59.699533"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/16
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms | Allocations: 2430)
+
+
+Started GET "/organisations/16" for ::1 at 2019-11-05 18:34:59 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"16"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 345)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:34:59 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 522)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1686)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.1ms | Allocations: 8493)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:36:07 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 1279)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2585)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 3748)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"organisations"}, missing required keys: [:id]):
+    1: <%= form_with scope: :organisation, url: organisation_path, local: true do |form| %>
+    2:     <p>
+    3:     <%= form.label :org_name %><br>
+    4:     <%= form.text_field :org_name %>
+  
+app/views/organisations/_form.html.erb:1
+app/views/organisations/index.html.erb:32
+Started GET "/users" for ::1 at 2019-11-05 18:36:46 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 931)
+Completed 200 OK in 14ms (Views: 12.8ms | ActiveRecord: 0.2ms | Allocations: 8534)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:36:52 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 726)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2102)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.2ms | Allocations: 9342)
+
+
+Started DELETE "/organisations.16" for ::1 at 2019-11-05 18:36:55 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/organisations.16"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-11-05 18:37:25 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.7ms | Allocations: 726)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 2100)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms | Allocations: 9696)
+
+
+Started DELETE "/organisations.16" for ::1 at 2019-11-05 18:37:26 +1000
+  
+ActionController::RoutingError (No route matches [DELETE] "/organisations.16"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-11-05 18:38:13 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.1ms | Allocations: 726)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 2028)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.1ms | Allocations: 9631)
+
+
+Started DELETE "/organisations/16" for ::1 at 2019-11-05 18:38:15 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zllztiY2aiFMZGc7BmlJt0+K9dG3sSoV4cwAFwnbkTxwROv+jCKi0V/ybg9j8sjhhABfMpnzMl1fiZp1JGshSg==", "id"=>"16"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.5ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms | Allocations: 2487)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:38:15 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 520)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1350)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.1ms | Allocations: 8019)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:38:16 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 1.9ms | Allocations: 703)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 897)
+Completed 200 OK in 14ms (Views: 11.3ms | ActiveRecord: 0.1ms | Allocations: 8197)
+
+
+Started POST "/organisations" for ::1 at 2019-11-05 18:38:19 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"a9ipDOOHVXt6GIkDNuMnVe6KCG/ky+Zu14UJRDu50hUaojb7b9ZuNmJdX6xxOvdk1YrzQVw+W/105bAsGbl+QQ==", "organisation"=>{"org_name"=>"Test Org", "hourly_rate"=>"10.1"}, "commit"=>"Save Organisation"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.4ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "hourly_rate", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["org_name", "Test Org"], ["hourly_rate", 10.1], ["created_at", "2019-11-05 08:38:19.429141"], ["updated_at", "2019-11-05 08:38:19.429141"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/17
+Completed 302 Found in 7ms (ActiveRecord: 1.3ms | Allocations: 2426)
+
+
+Started GET "/organisations/17" for ::1 at 2019-11-05 18:38:19 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"17"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:38:19 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 519)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1442)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.1ms | Allocations: 8109)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:39:13 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1737)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.1ms | Allocations: 9345)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:39:14 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1382)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.3ms | Allocations: 8050)
+
+
+Started GET "/organisations/17/edit" for ::1 at 2019-11-05 18:39:15 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 977)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.2ms | Allocations: 8279)
+
+
+Started POST "/organisations/17" for ::1 at 2019-11-05 18:39:17 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/17"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-11-05 18:39:40 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1375)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.2ms | Allocations: 8042)
+
+
+Started GET "/organisations/17/edit" for ::1 at 2019-11-05 18:39:41 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 2.0ms | Allocations: 748)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 7905)
+
+
+Started POST "/organisations/17" for ::1 at 2019-11-05 18:39:46 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/17"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/organisations/17" for ::1 at 2019-11-05 18:40:21 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/17"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started POST "/organisations/17" for ::1 at 2019-11-05 18:40:35 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/17"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started DELETE "/organisations/17" for ::1 at 2019-11-05 18:42:11 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Lis0DPIxkjBxBowkIithg67k11wz661M4e1GRpC7bNyQNqxEWCVawGKQhRBHsODVZW59vx2ptQRfqNwkvQvcqg==", "id"=>"17"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 17]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 5ms (ActiveRecord: 1.5ms | Allocations: 2487)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:42:11 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.6ms | Allocations: 776)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1983)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.1ms | Allocations: 9591)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:42:13 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.2ms | Allocations: 761)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 957)
+Completed 200 OK in 13ms (Views: 9.6ms | ActiveRecord: 0.2ms | Allocations: 8257)
+
+
+Started POST "/organisations/15/edit" for ::1 at 2019-11-05 18:42:16 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/15/edit"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisation/15/edit" for ::1 at 2019-11-05 18:45:38 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/organisation/15/edit"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/edit/15" for ::1 at 2019-11-05 18:45:53 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/organisations/edit/15"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations/edit" for ::1 at 2019-11-05 18:45:56 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"edit"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:45:56 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.2ms | Allocations: 776)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1982)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 9582)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:45:59 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.1ms | Allocations: 761)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.1ms | Allocations: 957)
+Completed 200 OK in 14ms (Views: 10.7ms | ActiveRecord: 0.3ms | Allocations: 8261)
+
+
+Started POST "/organisations/15/edit" for ::1 at 2019-11-05 18:46:05 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/15/edit"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-11-05 18:46:27 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 567)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1392)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.1ms | Allocations: 8066)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:46:29 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 932)
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.3ms | Allocations: 8174)
+
+
+Started GET "/users/31/edit" for ::1 at 2019-11-05 18:46:32 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.5ms | Allocations: 1663)
+  Rendered users/edit.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1992)
+Completed 200 OK in 14ms (Views: 10.8ms | ActiveRecord: 0.3ms | Allocations: 9288)
+
+
+Started PATCH "/users/31" for ::1 at 2019-11-05 18:46:36 +1000
+Processing by UsersController#update as HTML
+  Parameters: {"authenticity_token"=>"p40btKhiUxvK65YPTofI0SNUqUDTYoOAaWWwQvGUX4sbRdKVXNZHXZhck1UP6vA6LoV3pOCAy/PzrLcLrda7eQ==", "user"=>{"first_name"=>"Jesse Cunningham", "last_name"=>"Creech", "email_address"=>"jesse.creech@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Update User", "id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:30:in `update'
+[31mUnpermitted parameter: :password_confirmation[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[36mUser Update (0.4ms)[0m  [1m[33mUPDATE "users" SET "password" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["password", "$2a$12$PJ1jWbHKXM1hR0BU8jWglu8bLRc/mEna4OdnPBdYGytbiBqlCVcfe"], ["updated_at", "2019-11-05 08:46:36.483831"], ["id", 31]]
+  ↳ app/controllers/users_controller.rb:31:in `update'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `update'
+Redirected to http://localhost:3000/users/31
+Completed 302 Found in 242ms (ActiveRecord: 2.1ms | Allocations: 3208)
+
+
+Started GET "/users/31" for ::1 at 2019-11-05 18:46:36 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 289)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.1ms | Allocations: 7599)
+
+
+Started GET "/users" for ::1 at 2019-11-05 18:47:15 +1000
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 697)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.1ms | Allocations: 7367)
+
+
+Started GET "/users/31/edit" for ::1 at 2019-11-05 18:47:25 +1000
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:16:in `edit'
+  Rendering users/edit.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 1244)
+  Rendered users/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1328)
+Completed 200 OK in 15ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 8493)
+
+
+Started GET "/users/31" for ::1 at 2019-11-05 18:47:30 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 106)
+Completed 200 OK in 10ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 7264)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:49:28 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 2.2ms | Allocations: 776)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 1983)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms | Allocations: 9586)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:49:30 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.1ms | Allocations: 761)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.0ms | Allocations: 957)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.4ms | Allocations: 8254)
+
+
+Started POST "/organisations/15/edit" for ::1 at 2019-11-05 18:49:36 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/15/edit"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2019-11-05 18:50:10 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:8
+  Rendered users/index.html.erb within layouts/application (Duration: 20.2ms | Allocations: 6642)
+Completed 200 OK in 927ms (Views: 915.0ms | ActiveRecord: 0.6ms | Allocations: 1345409)
+
+
+Started GET "/users/31" for ::1 at 2019-11-05 18:50:14 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 301)
+Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 0.7ms | Allocations: 8059)
+
+
+Started GET "/users/31" for ::1 at 2019-11-05 18:51:21 +1000
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `show'
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 285)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 0.1ms | Allocations: 8402)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:51:24 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 3.5ms | Allocations: 2824)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 7240)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms | Allocations: 14635)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:51:30 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.1ms | Allocations: 886)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1109)
+Completed 200 OK in 14ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 8524)
+
+
+Started GET "/organisations/15" for ::1 at 2019-11-05 18:51:31 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"15"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/organisations" for ::1 at 2019-11-05 18:51:31 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 567)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1400)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.1ms | Allocations: 8095)
+
+
+Started GET "/organisations/15/edit" for ::1 at 2019-11-05 18:51:33 +1000
+Processing by OrganisationsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:15:in `edit'
+  Rendering organisations/edit.html.erb within layouts/application
+  Rendered organisations/_form.html.erb (Duration: 2.6ms | Allocations: 753)
+  Rendered organisations/edit.html.erb within layouts/application (Duration: 3.2ms | Allocations: 863)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.1ms | Allocations: 8035)
+
+
+Started POST "/organisations/15/edit" for ::1 at 2019-11-05 18:51:36 +1000
+  
+ActionController::RoutingError (No route matches [POST] "/organisations/15/edit"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/organisations" for ::1 at 2019-11-05 18:53:32 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 5.9ms | Allocations: 4467)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5696)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.1ms | Allocations: 6887)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa3c9ac13a8>
+Did you mean?  to_xml):
+    1: <%= form_with model: @organisation, local: true do |form| %>
+    2:     <p>
+    3:     <%= form.label :org_name %><br>
+    4:     <%= form.text_field :org_name %>
+  
+app/views/organisations/_form.html.erb:1
+app/views/organisations/index.html.erb:32
+Started GET "/organisations" for ::1 at 2019-11-05 18:53:35 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 4.6ms | Allocations: 4241)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 5073)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms | Allocations: 5493)
+
+
+  
+ActionView::Template::Error (undefined method `to_model' for #<Organisation::ActiveRecord_Relation:0x00007fa3c8d10998>
+Did you mean?  to_xml):
+    1: <%= form_with model: @organisation, local: true do |form| %>
+    2:     <p>
+    3:     <%= form.label :org_name %><br>
+    4:     <%= form.text_field :org_name %>
+  
+app/views/organisations/_form.html.erb:1
+app/views/organisations/index.html.erb:32
