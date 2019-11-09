@@ -1,11 +1,11 @@
-<div>
-  <div class="adnatHeader">
-    <h1>ADNAT</h1>
-  </div>
-</div>
+<%= render 'common/header' %>
 
+<% if current_user %>
+  Logged in as <%= current_user.email %>.
+  <%= link_to “Log Out”, logout_path %>
+<% end %>
 <div>
-  <p>Logged in as:   <a href="#">LogOut</a></p>
+
   <p>You are not the member of any organisations.<br>
     Join an existing one or create a new one</p>
 </div>

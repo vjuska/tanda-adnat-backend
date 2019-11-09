@@ -1,3 +1,4 @@
+<%= render 'common/header' %>
 <h1>Edit Organisation</h1>
 
 <%= form_with(model: @organisation, local: true) do |form| %>
@@ -16,4 +17,8 @@
     </p>
 <% end %>
 
-<%= link_to 'Back', organisation_path %>
+
+<div><%= link_to 'Delete', organisation_path(@organisation),
+      method: :delete,
+      data: {confirm: 'are you sure?'} =%><div>
+<div><%= link_to 'Back', organisation_path %></div>
