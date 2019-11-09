@@ -1,5 +1,19 @@
 <h1>Edit Organisation</h1>
 
-<%= render 'form' %>
+<%= form_with(model: @organisation, local: true) do |form| %>
+    <p>
+    <%= form.label :org_name %>
+    <%= form.text_field :org_name %>
+    </p>
+ 
+    <p>
+    <%= form.label :hourly_rate %>
+    <%= form.text_field :hourly_rate %>
+    </p>
+
+    <p>
+    <%= form.submit %>
+    </p>
+<% end %>
 
 <%= link_to 'Back', organisation_path %>
