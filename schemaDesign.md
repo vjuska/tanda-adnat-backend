@@ -18,7 +18,7 @@ hourly_rate: number  // allows for different wage rages per employee
 user_id: varchar
 first_name: varchar
 last_name: varchar
-email_address: varchar
+email: varchar
 password: varchar
 
 **shifts**
