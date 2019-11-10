@@ -16319,3 +16319,780 @@ Migrating to ChangeColumnName (20191109082854)
   [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/login" for ::1 at 2019-11-09 18:32:19 +1000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `new'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.4ms | Allocations: 158)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 36.3ms | Allocations: 5496)
+Completed 200 OK in 991ms (Views: 970.9ms | ActiveRecord: 0.4ms | Allocations: 1346603)
+
+
+Started GET "/sessions/new?email=f%40f.com&user%5Bpassword%5D=[FILTERED]&remember=0&commit=Login" for ::1 at 2019-11-09 18:32:26 +1000
+Processing by SessionsController#new as JS
+  Parameters: {"email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `new'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32:in `authenticate'
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.7ms | Allocations: 6736)
+
+
+  
+NoMethodError (undefined method `compare' for BCrypt::Password:Class):
+  
+app/models/user.rb:35:in `authenticate'
+app/controllers/sessions_controller.rb:4:in `new'
+Started GET "/organisations" for ::1 at 2019-11-09 18:32:33 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mOrganisation Load (0.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.5ms | Allocations: 829)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 56240.1ms | Allocations: 42654)
+Completed 200 OK in 56252ms (Views: 56248.3ms | ActiveRecord: 1.2ms | Allocations: 50916)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:33:33 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.3ms | Allocations: 567)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 127993.1ms | Allocations: 47291)
+Completed 200 OK in 128003ms (Views: 128001.2ms | ActiveRecord: 0.7ms | Allocations: 55936)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:35:43 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.3ms | Allocations: 86)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.6ms | Allocations: 1176)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 61885.7ms | Allocations: 48346)
+Completed 200 OK in 61898ms (Views: 61896.2ms | ActiveRecord: 0.6ms | Allocations: 58510)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:36:46 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered organisations/index.html.erb within layouts/application (Duration: 11124.9ms | Allocations: 51591)
+Completed 500 Internal Server Error in 11127ms (ActiveRecord: 0.8ms | Allocations: 52538)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:37:13 +1000
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.4ms | Allocations: 166)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+Started GET "/organisations" for ::1 at 2019-11-09 18:37:18 +1000
+  Rendered organisations/index.html.erb within layouts/application (Duration: 6843.7ms | Allocations: 55343)
+Completed 500 Internal Server Error in 6860ms (ActiveRecord: 1.7ms | Allocations: 57750)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3358.0ms | Allocations: 10219)
+Completed 500 Internal Server Error in 3359ms (ActiveRecord: 0.2ms | Allocations: 10662)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:37:35 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4336.4ms | Allocations: 15032)
+Completed 500 Internal Server Error in 4339ms (ActiveRecord: 0.8ms | Allocations: 15950)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:37:58 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 1.6ms | Allocations: 211)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered organisations/index.html.erb within layouts/application (Duration: 11062.7ms | Allocations: 44555)
+Completed 500 Internal Server Error in 11079ms (ActiveRecord: 1.2ms | Allocations: 47152)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:38:14 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:7:in `current_user'
+  Rendered organisations/index.html.erb within layouts/application (Duration: 37830.0ms | Allocations: 9920)
+Completed 500 Internal Server Error in 37832ms (ActiveRecord: 0.2ms | Allocations: 10350)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:39:09 +1000
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `new'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 4364)
+Completed 200 OK in 932ms (Views: 930.5ms | ActiveRecord: 0.2ms | Allocations: 1342132)
+
+
+Started GET "/sessions/new?email=f%40f.com&user%5Bpassword%5D=[FILTERED]&remember=0&remember=1&commit=Login" for ::1 at 2019-11-09 18:39:19 +1000
+Processing by SessionsController#new as JS
+  Parameters: {"email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"1", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `new'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32:in `authenticate'
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.4ms | Allocations: 2359)
+
+
+  
+NoMethodError (undefined method `compare' for BCrypt::Password:Class):
+  
+app/models/user.rb:35:in `authenticate'
+app/controllers/sessions_controller.rb:4:in `new'
+Started GET "/organisations" for ::1 at 2019-11-09 18:39:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.3ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.2ms | Allocations: 830)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 5310)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 1.1ms | Allocations: 12846)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:39:37 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.7ms | Allocations: 1222)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 5613)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.6ms | Allocations: 13610)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:39:40 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 567)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1639)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 9129)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:39:47 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.8ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1637)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.2ms | Allocations: 9117)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:40:06 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.2ms | Allocations: 1221)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 5580)
+Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.6ms | Allocations: 13521)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:40:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.0ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1637)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 9118)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:40:43 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.9ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1637)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.2ms | Allocations: 9122)
+
+
+Started DELETE "/organisations/15" for ::1 at 2019-11-09 18:40:47 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4C6dsHY23LToN2AEx1uqREc/Vt5ZvYHTIxtlBr1FY00+BNhANQw+dBvbrsq7xXHdLVTLFuTq8+pHy5Qmrn2O6Q==", "id"=>"15"}
+  [1m[36mOrganisation Load (0.4ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.7ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 15]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms | Allocations: 2677)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:40:47 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.4ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1547)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.2ms | Allocations: 9039)
+
+
+Started DELETE "/organisations/20" for ::1 at 2019-11-09 18:40:50 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MwYVwMM5xZMmdIr+ey8f0CV9iFl5a8lKpcKKFyfyKTLtLFAwgAMnU9WYRDAHscRJTxYVkcQ8u3PBEns3NMrElg==", "id"=>"20"}
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.3ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 20]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 7ms (ActiveRecord: 1.6ms | Allocations: 2486)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:40:50 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.1ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.3ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1463)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 8943)
+
+
+Started POST "/organisations" for ::1 at 2019-11-09 18:40:51 +1000
+Processing by OrganisationsController#create as HTML
+  Parameters: {"authenticity_token"=>"KVw1/IMcAM3uRSWX4a69K6uj9Q1JqFi9t4aOoNMTB6n3dnAMwCbiDR2p61mdMGaywchoxfT/KoTTVn+AwCvqDQ==", "organisation"=>{"org_name"=>"", "hourly_rate"=>""}, "commit"=>"Save Organisation"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[36mOrganisation Create (0.6ms)[0m  [1m[32mINSERT INTO "organisations" ("org_name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["org_name", ""], ["created_at", "2019-11-09 08:40:51.943452"], ["updated_at", "2019-11-09 08:40:51.943452"]]
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:21:in `create'
+Redirected to http://localhost:3000/organisations/21
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms | Allocations: 3055)
+
+
+Started GET "/organisations/21" for ::1 at 2019-11-09 18:40:51 +1000
+Processing by OrganisationsController#show as HTML
+  Parameters: {"id"=>"21"}
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:40:51 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.7ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1547)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms | Allocations: 9039)
+
+
+Started DELETE "/organisations/21" for ::1 at 2019-11-09 18:40:54 +1000
+Processing by OrganisationsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5Q1UAiGulRjKsJxMv/CDvjSxBDBoDGdf2dZSI41UuJQ7JxHyYpR32DlcUoLDblgnXtqZ+NVbFWa9BqMDnmxVMA==", "id"=>"21"}
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations" WHERE "organisations"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/organisations_controller.rb:38:in `destroy'
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[36mOrganisation Destroy (0.4ms)[0m  [1m[31mDELETE FROM "organisations" WHERE "organisations"."id" = ?[0m  [["id", 21]]
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/organisations_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/organisations
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms | Allocations: 2488)
+
+
+Started GET "/organisations" for ::1 at 2019-11-09 18:40:54 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.3ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1463)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.2ms | Allocations: 8951)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:41:01 +1000
+Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:3:in `new'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1672)
+Completed 200 OK in 13ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 10877)
+
+
+Started GET "/sessions/new?email=&user%5Bpassword%5D=&remember=0&commit=Login" for ::1 at 2019-11-09 18:43:12 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as JS
+  Parameters: {"email"=>"", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 286)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:14 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 277)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:14 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 277)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:23 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms | Allocations: 427)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:33 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:43:44 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.5ms | Allocations: 89)
+  [1m[36mOrganisation Load (13.5ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 4.2ms | Allocations: 2900)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 28.9ms | Allocations: 8126)
+Completed 200 OK in 872ms (Views: 851.3ms | ActiveRecord: 14.3ms | Allocations: 1346575)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:51 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 279)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:51 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 274)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:43:56 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitation/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 276)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:44:08 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000organitations/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 281)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:44:16 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2973)
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 10951)
+
+
+Started GET "/sessions/new?email=&user%5Bpassword%5D=&remember=0&commit=Login" for ::1 at 2019-11-09 18:45:17 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as JS
+  Parameters: {"email"=>"", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 302)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:45:17 +1000
+Processing by OrganisationsController#index as JS
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.2ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.5ms | Allocations: 1222)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 5762)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 1.0ms | Allocations: 13902)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:45:18 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 293)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:45:18 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 0.8ms | Allocations: 566)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1463)
+Completed 200 OK in 30ms (Views: 29.5ms | ActiveRecord: 0.1ms | Allocations: 8965)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:45:23 +1000
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 287)
+
+
+Started GET "/" for ::1 at 2019-11-09 18:45:23 +1000
+Processing by OrganisationsController#index as HTML
+  Rendering organisations/index.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  [1m[36mOrganisation Load (0.1ms)[0m  [1m[34mSELECT "organisations".* FROM "organisations"[0m
+  ↳ app/views/organisations/index.html.erb:16
+  Rendered organisations/_form.html.erb (Duration: 1.0ms | Allocations: 567)
+  Rendered organisations/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1471)
+Completed 200 OK in 13ms (Views: 12.7ms | ActiveRecord: 0.1ms | Allocations: 8973)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:45:37 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2352)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 9904)
+
+
+Started GET "/sessions/new?email=&user%5Bpassword%5D=&remember=0&commit=Login" for ::1 at 2019-11-09 18:45:39 +1000
+Processing by SessionsController#new as JS
+  Parameters: {"email"=>"", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1719)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 9257)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:46:37 +1000
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.4ms | Allocations: 86)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2291)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 10628)
+
+
+Started POST "/sessions" for ::1 at 2019-11-09 18:46:39 +1000
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"am3Oihoi6It0C2bgludEWIRyIm0sSsUJs2KRTF11fI+0R4t6WRgKS4fnqC7qeZ/B7hm/pZEdtzDXsmBsTk2RKw==", "email"=>"", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1855)
+Completed 200 OK in 19026ms (Views: 20.9ms | ActiveRecord: 0.7ms | Allocations: 241469)
+
+
+Started GET "/login" for ::1 at 2019-11-09 18:48:14 +1000
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 1.3ms | Allocations: 177)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 15.9ms | Allocations: 5206)
+Completed 200 OK in 1022ms (Views: 1010.8ms | ActiveRecord: 0.0ms | Allocations: 1344337)
+
+
+Started POST "/sessions" for ::1 at 2019-11-09 18:48:17 +1000
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"Qoh++b9ekQh4fIakfmUX+Kpdrrchb6agEsdySWkeLmOcojsJ/GRzyIuQSGoC+8xhwDYzf5w41Jl2F4NpeibDxw==", "email"=>"", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  Rendering sessions/new.html.erb within layouts/application
+Started GET "/login" for ::1 at 2019-11-09 18:48:40 +1000
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2003)
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2065)
+Completed 200 OK in 23614ms (Views: 22.8ms | ActiveRecord: 0.6ms | Allocations: 53117)
+
+
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 15900)
+
+
+Started POST "/sessions" for ::1 at 2019-11-09 18:48:46 +1000
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"906xupM0BKMyRWAE4SEdp5u96PH4nTij0BO5J8xH4CQpZPRK0A7mY8Gprsqdv8Y+8dZ1OUXKSpq0w0gH338NgA==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 64752ms (ActiveRecord: 2.3ms | Allocations: 266324)
+
+
+  
+ArgumentError (wrong number of arguments (given 1, expected 2)):
+  
+app/models/user.rb:31:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 18:49:54 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"906xupM0BKMyRWAE4SEdp5u96PH4nTij0BO5J8xH4CQpZPRK0A7mY8Gprsqdv8Y+8dZ1OUXKSpq0w0gH338NgA==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  ↳ app/models/user.rb:32:in `authenticate'
+Completed 500 Internal Server Error in 2976ms (ActiveRecord: 1.1ms | Allocations: 11482)
+
+
+  
+NoMethodError (undefined method `compare' for BCrypt::Password:Class):
+  
+app/models/user.rb:35:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/login" for ::1 at 2019-11-09 18:51:43 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2408)
+Completed 200 OK in 12ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 9983)
+
+
+Started POST "/sessions" for ::1 at 2019-11-09 18:51:50 +1000
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"LlguwqWDjbqgmmgzqaMA5AHksf4aNhkWeHSOI/bod3Dwcmsy5rlvelN2pv3VPdt9a48sNqdhay8cpH8D5dCa1A==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 4026ms (ActiveRecord: 0.8ms | Allocations: 10241)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 2)):
+  
+app/models/user.rb:31:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 18:52:41 +1000
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"LlguwqWDjbqgmmgzqaMA5AHksf4aNhkWeHSOI/bod3Dwcmsy5rlvelN2pv3VPdt9a48sNqdhay8cpH8D5dCa1A==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+Completed 500 Internal Server Error in 1850ms (ActiveRecord: 0.0ms | Allocations: 35631)
+
+
+  
+NameError (undefined local variable or method `params' for #<Class:0x00007fe44196a7d0>):
+  
+app/models/user.rb:31:in `<class:User>'
+app/models/user.rb:23:in `<main>'
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/login" for ::1 at 2019-11-09 18:53:08 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 15.4ms | Allocations: 89)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 21.1ms | Allocations: 4675)
+Completed 200 OK in 918ms (Views: 917.4ms | ActiveRecord: 0.0ms | Allocations: 1342075)
+
+
+Started POST "/sessions" for ::1 at 2019-11-09 18:53:15 +1000
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"ckeMXofn3DRFyGYTzAYzCKtFIKvbhn0rD9H0vavEtNKsbcmuxN0+9LYkqN2wmOiRwS69Y2bRDxJrAQWduPxZdg==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 2302ms (ActiveRecord: 0.8ms | Allocations: 14193)
+
+
+  
+NameError (undefined local variable or method `params' for #<User:0x00007fe44a90a458>):
+  
+app/models/user.rb:32:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 18:56:00 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"ckeMXofn3DRFyGYTzAYzCKtFIKvbhn0rD9H0vavEtNKsbcmuxN0+9LYkqN2wmOiRwS69Y2bRDxJrAQWduPxZdg==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 124278ms (ActiveRecord: 0.7ms | Allocations: 29150)
+
+
+  
+NameError (undefined local variable or method `params' for #<User:0x00007fe44a82bbe0>):
+  
+app/models/user.rb:33:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started GET "/login" for ::1 at 2019-11-09 18:58:05 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2434)
+Completed 200 OK in 20ms (Views: 19.9ms | ActiveRecord: 0.0ms | Allocations: 25013)
+
+
+Started POST "/sessions" for ::1 at 2019-11-09 18:58:14 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"0ooeHo8+RXBduajIlXLPPIQ7ch5f3SYoVJAuOEiGxl4MoFvuzASnsK5VZgbp7BSl7lDv1uKKVBEwQN8YW74r+g==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `authenticate'
+Completed 500 Internal Server Error in 27887ms (ActiveRecord: 0.9ms | Allocations: 57521)
+
+
+  
+NameError (undefined local variable or method `home_url' for #<User:0x00007fe441f077b0>):
+  
+app/models/user.rb:37:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 18:59:03 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"0ooeHo8+RXBduajIlXLPPIQ7ch5f3SYoVJAuOEiGxl4MoFvuzASnsK5VZgbp7BSl7lDv1uKKVBEwQN8YW74r+g==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/models/user.rb:33:in `authenticate'
+Completed 500 Internal Server Error in 46239ms (ActiveRecord: 0.9ms | Allocations: 72103)
+
+
+  
+NameError (undefined local variable or method `root_url' for #<User:0x00007fe449b83e10>):
+  
+app/models/user.rb:37:in `authenticate'
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 19:01:55 +1000
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"0ooeHo8+RXBduajIlXLPPIQ7ch5f3SYoVJAuOEiGxl4MoFvuzASnsK5VZgbp7BSl7lDv1uKKVBEwQN8YW74r+g==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 2399ms (ActiveRecord: 0.9ms | Allocations: 13633)
+
+
+  
+NoMethodError (undefined method `authenticate' for #<User:0x00007fe441f3e788>):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 19:03:11 +1000
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"0ooeHo8+RXBduajIlXLPPIQ7ch5f3SYoVJAuOEiGxl4MoFvuzASnsK5VZgbp7BSl7lDv1uKKVBEwQN8YW74r+g==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 2529ms (ActiveRecord: 1.0ms | Allocations: 39004)
+
+
+  
+ArgumentError (wrong number of arguments (given 2, expected 1)):
+  
+app/controllers/sessions_controller.rb:7:in `create'
+Started POST "/sessions" for ::1 at 2019-11-09 19:03:33 +1000
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as JS
+  Parameters: {"authenticity_token"=>"0ooeHo8+RXBduajIlXLPPIQ7ch5f3SYoVJAuOEiGxl4MoFvuzASnsK5VZgbp7BSl7lDv1uKKVBEwQN8YW74r+g==", "email"=>"f@f.com", "user"=>{"password"=>"[FILTERED]"}, "remember"=>"0", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "f@f.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Completed 500 Internal Server Error in 1874ms (ActiveRecord: 0.9ms | Allocations: 42322)
+
+
+  
+NoMethodError (undefined method `password_digest' for #<User:0x00007fade64b4bc8>
+Did you mean?  password):
+  
+app/controllers/sessions_controller.rb:7:in `create'

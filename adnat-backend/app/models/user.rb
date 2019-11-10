@@ -21,17 +21,11 @@ class UserValidator < ActiveModel::Validator
 end
 
 class User < ApplicationRecord
+    has_secure_password
     validates :first_name, presence: true, length: {minimum: 2}
     validates :last_name, presence: true, length: {minimum: 2}
     validates :email, presence: true, email: true
     validates_confirmation_of :password,:password_confirmation, message: "The passwords do not match"
     # validates_presence_of :password_confirmation, :if => :password_changed?
     validates_with UserValidator
-
-    def authenticate(id, enteredPassword)
-        @user = User.find(id)
-        puts @user.email
-        puts @user.password
-        BCrypt::Password.compare()
-    end
 end

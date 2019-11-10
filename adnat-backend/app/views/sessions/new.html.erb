@@ -3,7 +3,7 @@
     <h2>Login</h2>
 </div>
 
-<%= form_with(url: sessions_new_path, method: "get") do |form| %>
+<%= form_with(url: sessions_path, method: "post") do |form| %>
   <div class=adnatLoginInputBlock>
     <%= form.label :email %>
     <%= form.text_field :email %>
